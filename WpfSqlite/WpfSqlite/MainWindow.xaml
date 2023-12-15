@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfSqlite.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSqlite"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label Content="Imię: " />
+            <TextBox x:Name="textboxName" />
+            
+            <Label Content="Nazwisko: " />
+            <TextBox x:Name="textboxSurname" />
+
+            <Button Content="Zapisz" Click="SaveData" Margin="0 0 0 30"/>
+            <Button Content="Wyświetl" Click="LoadData" Margin="0 0 0 30"/>
+            <Button Content="Save" Click="SaveChanges" Margin="0 0 0 30"/>
+            <Button Content="Clear" Click="ClaerDataGrid" Margin="0 0 0 30"/>
+            <DataGrid x:Name="datGrid" AutoGenerateColumns="True" />
+        </StackPanel>
+
+    </Grid>
+</Window>
